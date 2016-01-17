@@ -22,3 +22,8 @@ Command line :
 Expected result :
 
     xml/annuaire.xml validates
+
+Example files
+-------------
+
+Try with the example files in the `xml` folder !
