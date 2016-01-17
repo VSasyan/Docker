@@ -1,7 +1,24 @@
-Check your files with docker !
-==============================
+Check your XML files with docker !
+==================================
 
-Install the container
----------------------
+Get the image
+-------------
 
-    sudo docker build -t debian:jessie https://raw.githubusercontent.com/VSasyan/Docker/master/xmllint/install_file.sh
+    docker pull vsasyan/xmllint
+
+Check your files
+----------------
+
+My file to check (with the XSD file) :
+
+    /local/xml
+        annuaire.xml
+        annuaire.xsd
+
+Command line :
+
+    sudo docker run -v /local/xml:/xml xmllint xmllint --noout xml/annuaire.xml --schema xml/annuaire.xsd
+
+Expected result :
+
+    xml/annuaire.xml validates
