@@ -17,7 +17,7 @@ My file to check (with the XSD file) :
 
 Command line :
 
-    sudo docker run -v /local/xml:/xml xmllint xmllint --noout xml/annuaire.xml --schema xml/annuaire.xsd
+    sudo docker run -v /local/xml:/xml xmllint vsasyan/xmllint --noout xml/annuaire.xml --schema xml/annuaire.xsd
 
 Expected result :
 
