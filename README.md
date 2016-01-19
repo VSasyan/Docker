@@ -40,4 +40,6 @@ Try with the example files in the `xml` folder !
  
 #### Expected result
 
+![Screen of the console](img/screen.png "Screen of the console")
+
 `xml/annuaire.xml validates`
