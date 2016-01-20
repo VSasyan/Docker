@@ -21,7 +21,7 @@ My file to check (with the XSD file) :
 
 Command line :
 
-    sudo docker run -v /local/xml:/xml vsasyan/xmllint xmllint --noout xml/annuaire.xml --schema xml/annuaire.xsd
+    sudo docker run -v /local/xml:/xml vsasyan/xmllint ./check.sh annuaire
 
 Expected result :
 
@@ -36,7 +36,7 @@ Try with the example files in the `xml` folder !
 2. Clone the git : `git clone https://github.com/VSasyan/xmllint.git`
 3. Go inside the `xml` folder : `cd xmllint/xml`
 4. Get the absolute path : `path=$(pwd)`
-5. Run the container : `sudo docker run -v $path:/xml vsasyan/xmllint xmllint --noout xml/annuaire.xml --schema xml/annuaire.xsd`
+5. Run the container : `sudo docker run -v $path:/xml vsasyan/xmllint ./check.sh annuaire`
  
 #### Expected result
 
