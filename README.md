@@ -34,7 +34,7 @@ Try with the example files in the `xml` folder !
 
 1. Get the image : `docker pull vsasyan/xmllint`
 2. Clone the git : `git clone https://github.com/VSasyan/xmllint.git`
-3. Get the absolute path of the `xml` folder: `path=$(pwd)/wmllint/xml`
+3. Get the absolute path of the `xml` folder: `path=$(pwd)/xmllint/xml`
 4. Run the container : `sudo docker run -v $path:/xml vsasyan/xmllint ./check.sh annuaire`
  
 #### Expected result
